@@ -1,4 +1,4 @@
 # CovidScope
 Covid 19 SIR model analytics
 
-change 1.0
+change 2.0
