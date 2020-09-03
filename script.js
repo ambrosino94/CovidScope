@@ -30,7 +30,7 @@ var prediction2Color = 'rgba(177, 118, 53)';
 // Fonts
 var fontsColor ='#919191';
 // =============================================================================
-const uri = './cvdData3.json';
+const uri = './cvdData.json';
 var covidData = [];
 
 Plot2(CTX);
