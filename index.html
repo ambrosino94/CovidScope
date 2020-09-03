@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CovidScope - El virus en la mira</title>
+  <link rel="icon" href="Assets/Images/CovidFavicon.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- <script src="D:\Documents\AmbrosinoTech\Research\CovidScope\node_modules\chart.js\dist\Chart.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+  <script language="javascript" type="text/javascript" src="script.js"></script>
+
+  <!-- <meta name="google-signin-client_id" content="753088232878-pniqsnlc1i418h0f7n0m72e5bcv8dpdc.apps.googleusercontent.com">
+  <meta name="google-site-verification" content="hwP7q1KyNbpvMhGa-qz5TX0a9EKrPKxhRrjZlixcgl0" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script> -->
+  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <!--
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="Day.js"></script>
+  <script language="javascript" type="text/javascript" src="p5js-temp-edc1102918591872501031.js"></script>
+  -->
+
+</head>
+
+<body bgcolor="#404040"> <!-- Assigning grey background color to the whole html>-->
+  <!-- <script src="https://apis.google.com/js/api.js"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <!-- <script language="javascript" type="text/javascript" src="gapisTests.js"></script> -->
+  <!-- <button onclick="authenticate().then(loadDriveClientV3).then(loadSheetsClient).then(CreateFolder).then(CreateSpreadsheet)">Run</button> -->
+  <!-- <button onclick="authenticate().then(loadDriveClientV3).then(loadSheetsClient).then(CreateFolder).then(OpenFile).then(CopyTemplate).then(WriteSheet).then(LoadReport)">Run</button> -->
+
+
+  <div class="container">
+
+  <header>
+  <img src="Assets/Images/COVIDtitle.png" alt="logo" />
+  <ul>
+  <li><a href="#defaultPty"><img id="ptyBtn" src="Assets/Images/Panamá.png"></a></li>
+  <!-- <li><a href="#colombia"><img id="coloBtn" src="Assets/Images/Colombia.png"></a></li>
+  <li><a href="#italia"><img id="italyBtn" src="Assets/Images/Italia.png"></a></li>
+  <li><a href="#usa"><img id="usaBtn" src="Assets/Images/USA.png"></a></li> -->
+  </ul>
+   <!-- <h1>El virus en la mira...</h1> -->
+  </header>
+  </div>
+  <br>
+  <canvas id="Plot1" width="1600" height="900"></canvas>
+  <script>
+  var ctx = document.getElementById("Plot1");
+  DrawChart(ctx);
+  </script>
+  <!-- <img src="Assets/Images/rprt.png" class="center" /> -->
+  <br>
+<div class="infogram-embed" data-id="b2f82703-e906-4e13-844b-228c267edb61" data-type="interactive" data-title="CovidScope"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/b2f82703-e906-4e13-844b-228c267edb61" style="color:#989898!important;text-decoration:none!important;" target="_blank">CovidScope</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div> 
+<!-- <iframe id= "Iframe" height="1000" scrolling="no" frameborder="0" src="//plotly.com/~ambrosino94/0.embed"></iframe> -->
+  <!-- <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~ambrosino94/0.embed"></iframe>
+  <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+ <script>
+  document.getElementById('myIframe').src = "https://chart-studio.plotly.com/~ambrosino94/0.embed"; -->
+
+
+</body>
+</html>
