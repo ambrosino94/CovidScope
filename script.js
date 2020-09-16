@@ -208,7 +208,7 @@ async function Plot1(ctx){
                 borderSkipped: 'bottom',
                 pointStyle: 'circle',
                 spanGaps: true,
-                pointRadius: 4,
+                pointRadius: 2,
                 lineTension: 0.5,
                 // this dataset is drawn below
                 order: 1
