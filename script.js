@@ -179,7 +179,12 @@ async function Plot1(ctx){
     const response = await fetch(uri);
     const data = await response.json();
     console.log("fetching done", data);
-
+    var pRadius;
+    if (window.screen.width*window.devicePixelRatio < 990) {
+      pRadius = 1;
+    } else if (window.screen.width*window.devicePixelRatio > 990) {
+      pRadius = 3;
+    }
       var mixedChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -208,7 +213,7 @@ async function Plot1(ctx){
                 borderSkipped: 'bottom',
                 pointStyle: 'circle',
                 spanGaps: true,
-                pointRadius: 2,
+                pointRadius: pRadius,
                 lineTension: 0.5,
                 // this dataset is drawn below
                 order: 1
