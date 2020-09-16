@@ -144,7 +144,7 @@ async function Plot1(ctx){
               borderColor: 'rgba(0,0,0,0)',
               pointStyle: 'circle',
               borderSkipped: 'bottom',
-              radius: 2.5,
+              radius: 1.25,
               // this dataset is drawn below
               order: 9
           }
