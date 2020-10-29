@@ -121,6 +121,7 @@ li a:hover {
 footer{
 	position: absolute;
 	bottom: 0;
+  width:100%;
 }
 .footer-distributed{
 	background-color: #292c2f;
@@ -261,6 +262,11 @@ footer{
 
 #container {
    height:100%;
+}
+
+#container {
+   min-height:100%;
+   position:relative;
 }
 
 @media (max-width: 880px) {
