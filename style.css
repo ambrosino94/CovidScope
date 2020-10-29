@@ -271,7 +271,7 @@ footer{
 #div2 {
     vertical-align:top;
     display: inline-block;
-    /* overflow: hidden; */
+    overflow: hidden;
     font-size: 18px;
 }
 
