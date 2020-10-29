@@ -262,7 +262,7 @@ footer{
 }
 
 #wrapper {
-    overflow:auto
+    overflow:hidden;
 }
 #div1 {
     display: inline-block;
