@@ -271,6 +271,7 @@ footer{
 #div2 {
     vertical-align:top;
     display: inline-block;
+    float: left;
     overflow: hidden;
 }
 
