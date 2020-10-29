@@ -272,6 +272,7 @@ footer{
     vertical-align:top;
     display: inline-block;
     overflow: hidden;
+    font-size: 18px;
 }
 
 .coffee-btn {
