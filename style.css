@@ -119,7 +119,7 @@ li a:hover {
 }
 
 footer{
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 }
 .footer-distributed{
@@ -259,6 +259,9 @@ footer{
 	margin-bottom: 5px;
 }
 
+#container {
+   height:100%;
+}
 
 @media (max-width: 880px) {
 
