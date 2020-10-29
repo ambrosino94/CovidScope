@@ -260,6 +260,10 @@ footer{
 	margin-bottom: 5px;
 }
 
+.coffee-btn {
+  width : 85%;
+}
+
 #container {
    height:100%;
 }
