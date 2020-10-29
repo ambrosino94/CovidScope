@@ -150,6 +150,7 @@ footer{
 	color:  #ffffff;
   font-family: Consolas, monaco, monospace;
   font-size: 36px;
+  vertical-align: top;
 }
 
 .footer-distributed h3 span{
