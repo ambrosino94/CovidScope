@@ -180,9 +180,12 @@ async function Plot1(ctx){
     const data = await response.json();
     console.log("fetching done", data);
     var pRadius;
-    if (window.screen.width*window.devicePixelRatio < 990) {
+
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+      // true for mobile device
       pRadius = 1;
-    } else if (window.screen.width*window.devicePixelRatio > 990) {
+    }else{
+      // false for not mobile device
       pRadius = 3;
     }
       var mixedChart = new Chart(ctx, {
@@ -262,11 +265,11 @@ async function Plot1(ctx){
             animationDuration: 0 // duration of animations when hovering an item
           },
           responsiveAnimationDuration: 0, // animation duration after a resize
-          elements: {
-            line: {
-              tension: 0 // disables bezier curves
-            }
-          }
+          // elements: {
+          //   line: {
+          //     tension: 0 // disables bezier curves
+          //   }
+          // }
         }
       });
 
