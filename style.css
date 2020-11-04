@@ -274,12 +274,12 @@ footer{
 
 #div1 {
     /* display: inline-block; */
-    /* float: right;
-    vertical-align: top; */
+    float: right;
+    vertical-align: top;
 
 }
 #div2 {
-    vertical-align:middle;
+    vertical-align:bottom;
     margin-left: -10px;
     width: auto;
     /* display: inline-block; */
