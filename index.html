@@ -54,13 +54,26 @@
 
   <script>
 
-  if (window.devicePixelRatio*window.screen.width < 990){
+
+  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    // true for mobile device
     document.getElementById("infogramLarge").style.display = 'none';
     document.getElementById("infogramShort").style.display = 'block';
-  } else {
+  }else{
+    // false for not mobile device
     document.getElementById("infogramLarge").style.display = 'block';
     document.getElementById("infogramShort").style.display = 'none';
   }
+
+
+
+  // if (window.devicePixelRatio*window.screen.width < 990){
+  //   document.getElementById("infogramLarge").style.display = 'none';
+  //   document.getElementById("infogramShort").style.display = 'block';
+  // } else {
+  //   document.getElementById("infogramLarge").style.display = 'block';
+  //   document.getElementById("infogramShort").style.display = 'none';
+  // }
 
 
 </script>
