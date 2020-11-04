@@ -274,6 +274,8 @@ footer{
 
 #div1 {
     /* display: inline-block; */
+    float: right;
+    vertical-align: middle;
 
 }
 #div2 {
