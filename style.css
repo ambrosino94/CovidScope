@@ -279,8 +279,8 @@ footer{
 
 }
 #div2 {
-    vertical-align:top;
-    margin-left: -50px;
+    /* vertical-align:top; */
+    margin-left: -10px;
     /* display: inline-block; */
     overflow: hidden;
     font-size: 18px;
