@@ -274,12 +274,13 @@ footer{
 
 #div1 {
     /* display: inline-block; */
-    float: right;
-    vertical-align: top;
+    /* float: right;
+    vertical-align: top; */
 
 }
 #div2 {
     vertical-align:top;
+    margin-left: -50px;
     /* display: inline-block; */
     overflow: hidden;
     font-size: 18px;
