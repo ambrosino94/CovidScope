@@ -263,14 +263,22 @@ footer{
 
 #wrapper {
     overflow:auto;
+    display: table;
 }
+#div1, #div2 {
+  display: table-cell;
+  padding: 2px 6px;
+
+
+}
+
 #div1 {
-    display: inline-block;
+    /* display: inline-block; */
 
 }
 #div2 {
     vertical-align:top;
-    display: inline-block;
+    /* display: inline-block; */
     overflow: hidden;
     font-size: 18px;
 }
