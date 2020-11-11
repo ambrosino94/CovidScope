@@ -153,7 +153,7 @@ async function Plot1(){
         name: 'yUpper',
         type: 'spline',
 /*         yAxis: 2, */
-        data: data[0].Plot1[0].yUpper[0],
+        data: data[0].Plot1[0].yUpper,
         /* marker: {
             enabled: false
         },
