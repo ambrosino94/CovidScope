@@ -38,6 +38,7 @@ Plot1();
 async function Plot1(){
   const response = await fetch(uri);
   const data = await response.json();
+  console.log(data);
   Highcharts.chart('plot1', {
     chart: {
         zoomType: 'xy'
@@ -363,7 +364,7 @@ async function Plot1(){
 //     });
 //
 //   }
-//
+
 //   async function Plot2(ctx){
 //     const response = await fetch(uri);
 //     const data = await response.json();
