@@ -12,7 +12,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
   <script src="https://kit.fontawesome.com/ed2ee1aa4d.js" crossorigin="anonymous"></script>
+
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/series-label.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
   <script language="javascript" type="text/javascript" src="script.js"></script>
 
 </head>
@@ -35,12 +43,18 @@
   </header>
   </div>
   <br>
-  <canvas id="Plot1" width="1600" height="900"></canvas>
+
+  <!-- <canvas id="Plot1" width="1600" height="900"></canvas>
   <script>
   var ctx = document.getElementById("Plot1");
   DrawChart(ctx);
   </script>
-  <!-- <img src="Assets/Images/rprt.png" class="center" /> -->
+  <!-- <img src="Assets/Images/rprt.png" class="center" /> --> -->
+
+  <figure class="highcharts-figure">
+      <div id="plot1"></div>
+  </figure>
+
   <br>
 
   <div id="infogramShort">

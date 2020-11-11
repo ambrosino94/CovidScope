@@ -32,8 +32,197 @@ var fontsColor ='#919191';
 // =============================================================================
 const uri = './cvdData.json';
 var covidData = [];
+// Plot2(CTX);
+Plot1();
 
-Plot2(CTX);
+async function Plot1(){
+  const response = await fetch(uri);
+  const data = await response.json();
+  Highcharts.chart('plot1', {
+    chart: {
+        zoomType: 'xy'
+    },
+    title: {
+        text: 'Average Monthly Weather Data for Tokyo',
+        align: 'left'
+    },
+    subtitle: {
+        text: 'Source: WorldClimate.com',
+        align: 'left'
+    },
+    plotOptions: {
+        series: {
+            connectNulls: true
+        }
+        },
+    xAxis: [{
+        categories: data[0].Plot1.xt,
+        crosshair: true,
+        plotBands: [{ // Critical Point
+     		 from: data[0].Plot1.yCriticalP,
+   		   to: data[0].Plot1.yCriticalP+2,
+   		   color: 'rgba(255, 0, 0,)'
+        },
+        { // Acceleration Stage
+     		 from: data[0].Plot1.yAccelerationStage[0],
+   		   to: data[0].Plot1.yAccelerationStage[1],
+   		   color: 'rgba(68, 0, 0, .2)'
+        },
+        { // Steady Stage
+     		 from: data[0].Plot1.ySteadyStage[0],
+   		   to: data[0].Plot1.ySteadyStage[1],
+   		   color: 'rgba(68, 68, 0, .2)'
+        },
+        { // End Phase
+     		 from: data[0].Plot1.yFinalStage[0],
+   		   to: data[0].Plot1.yFinalStage[1],
+   		   color: 'rgba(0, 68, 0, .2)'
+        }]
+    }],
+    yAxis: [{ // Primary yAxis
+        labels: {
+            // format: '{value}°C',
+            style: {
+                color: Highcharts.getOptions().colors[2]
+            }
+        },
+        title: {
+            text: 'Cases',
+            style: {
+                color: Highcharts.getOptions().colors[2]
+            }
+        },
+        opposite: true
+
+    }, { // Secondary yAxis
+        gridLineWidth: 0,
+        title: {
+            text: 'Rainfall',
+            style: {
+                color: Highcharts.getOptions().colors[0]
+            }
+        },
+        labels: {
+            format: '{value} mm',
+            style: {
+                color: Highcharts.getOptions().colors[0]
+            }
+        }
+
+    }, { // Tertiary yAxis
+        gridLineWidth: 0,
+        title: {
+            text: 'Sea-Level Pressure',
+            style: {
+                color: Highcharts.getOptions().colors[1]
+            }
+        },
+        labels: {
+            format: '{value} mb',
+            style: {
+                color: Highcharts.getOptions().colors[1]
+            }
+        },
+        opposite: true
+    }],
+    tooltip: {
+        shared: true
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'left',
+        x: 80,
+        verticalAlign: 'top',
+        y: 55,
+        floating: true,
+        backgroundColor:
+            Highcharts.defaultOptions.legend.backgroundColor || // theme
+            'rgba(255,255,255,0.25)'
+    },
+    series: [{
+        name: 'prediction',
+        type: 'areaspline',
+        /* yAxis: 1, */
+        data: data[0].Plot1.yPrediction,
+        tooltip: {
+            valueSuffix: ' cases'
+        }
+
+    }, {
+        name: 'yUpper',
+        type: 'spline',
+/*         yAxis: 2, */
+        data: data[0].Plot1.yUpper[0],
+        /* marker: {
+            enabled: false
+        },
+        dashStyle: 'shortdot',
+        tooltip: {
+            valueSuffix: ' mb'
+        } */
+
+    }, {
+        name: 'yLower',
+        type: 'spline',
+        data: data[0].Plot1.yLower,
+    },{
+        name: 'normal P',
+        type: 'spline',
+/*         yAxis: 2, */
+        data: data[0].Plot1.yNormalP,
+       marker: {
+            enabled: false
+        },
+        dashStyle: 'shortdot',
+        tooltip: {
+            valueSuffix: ' mb'
+        }
+
+    }],
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    floating: false,
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    x: 0,
+                    y: 0
+                },
+                yAxis: [{
+                    labels: {
+                        align: 'right',
+                        x: 0,
+                        y: -6
+                    },
+                    showLastLabel: false
+                }, {
+                    labels: {
+                        align: 'left',
+                        x: 0,
+                        y: -6
+                    },
+                    showLastLabel: false
+                }, {
+                    visible: false
+                }]
+            }
+        }]
+    }
+});
+}
+
+
+
+
+
+
+
+
 
 async function Plot1(ctx){
   const response = await fetch(uri);
