@@ -66,17 +66,17 @@ async function Plot1(){
         },
         { // Acceleration Stage
      		 from: data[0].Plot1[0].yAccelerationStage[0],
-   		   to: data[0].Plot1.yAccelerationStage[1],
+   		   to: data[0].Plot1[0].yAccelerationStage[1],
    		   color: 'rgba(68, 0, 0, .2)'
         },
         { // Steady Stage
-     		 from: data[0].Plot1.ySteadyStage[0],
-   		   to: data[0].Plot1.ySteadyStage[1],
+     		 from: data[0].Plot1[0].ySteadyStage[0],
+   		   to: data[0].Plot1[0].ySteadyStage[1],
    		   color: 'rgba(68, 68, 0, .2)'
         },
         { // End Phase
-     		 from: data[0].Plot1.yFinalStage[0],
-   		   to: data[0].Plot1.yFinalStage[1],
+     		 from: data[0].Plot1[0].yFinalStage[0],
+   		   to: data[0].Plot1[0].yFinalStage[1],
    		   color: 'rgba(0, 68, 0, .2)'
         }]
     }],
@@ -144,7 +144,7 @@ async function Plot1(){
         name: 'prediction',
         type: 'areaspline',
         /* yAxis: 1, */
-        data: data[0].Plot1.yPrediction,
+        data: data[0].Plot1[0].yPrediction,
         tooltip: {
             valueSuffix: ' cases'
         }
@@ -153,7 +153,7 @@ async function Plot1(){
         name: 'yUpper',
         type: 'spline',
 /*         yAxis: 2, */
-        data: data[0].Plot1.yUpper[0],
+        data: data[0].Plot1[0].yUpper[0],
         /* marker: {
             enabled: false
         },
@@ -165,12 +165,12 @@ async function Plot1(){
     }, {
         name: 'yLower',
         type: 'spline',
-        data: data[0].Plot1.yLower,
+        data: data[0].Plot1[0].yLower,
     },{
         name: 'normal P',
         type: 'spline',
 /*         yAxis: 2, */
-        data: data[0].Plot1.yNormalP,
+        data: data[0].Plot1[0].yNormalP,
        marker: {
             enabled: false
         },
