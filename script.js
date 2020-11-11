@@ -65,7 +65,7 @@ async function Plot1(){
    		   color: 'rgba(255, 0, 0,)'
         },
         { // Acceleration Stage
-     		 from: data[0].Plot1.yAccelerationStage[0],
+     		 from: data[0].Plot1[0].yAccelerationStage[0],
    		   to: data[0].Plot1.yAccelerationStage[1],
    		   color: 'rgba(68, 0, 0, .2)'
         },
