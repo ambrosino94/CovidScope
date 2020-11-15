@@ -44,7 +44,7 @@ async function Plot1(){
         zoomType: 'xy'
     },
     title: {
-        text: 'Average Monthly Weather Data for Tokyo',
+        text: data[0].Plot1[0].title,
         align: 'left'
     },
     subtitle: {
@@ -88,7 +88,7 @@ async function Plot1(){
             }
         },
         title: {
-            text: 'Cases',
+            text: data[0].Plot1[0].title,
             style: {
                 color: Highcharts.getOptions().colors[2]
             }
