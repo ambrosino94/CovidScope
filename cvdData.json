@@ -27,6 +27,6 @@
 		"xLabel" : "Date",
 		"yLabel" : "cases/day"
 		}],
-	"TotalInfected" : 293592,
-	"TotalDead" : 4689
+	"TotalInfected" : 299361,
+	"TotalDead" : 4828
 	}]
