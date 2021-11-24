@@ -17,14 +17,14 @@ div.container {
 header, footer {
     padding: 1em;
     color: white;
-    background-color: #35332c;
+    /* background-color: #35332c; */
     clear: left;
     text-align: left;}
 
 header {
-  -webkit-box-shadow: 0px 5px 0px 0px rgba(177,118,53,1);
+  /* -webkit-box-shadow: 0px 5px 0px 0px rgba(177,118,53,1);
   -moz-box-shadow: 0px 5px 0px 0px rgba(177,118,53,1);
-  box-shadow: 0px 5px 0px 0px rgba(177,118,53,1);
+  box-shadow: 0px 5px 0px 0px rgba(177,118,53,1); */
 }
 
 header h1 {
@@ -36,8 +36,13 @@ header h1 {
 header img {
 
   float: none;
-/* width: 35%;
-height: 35%; */
+  /* width: 5%;
+  height: 35%; */
+}
+
+li a {
+      font-family: 'Comfortaa', cursive;
+      font-size: 25px;
 }
 
 li a img{
@@ -66,33 +71,48 @@ li a img{
 
 @media screen and (max-width: 540px) {
   header img {
-      padding: 15px;
-      width: 100%;
+      padding: 3px;
+      width: 45%;
       position: relative;
   }
+
+  ul {
+    padding: 0px;
+  }
+
 }
-@media screen and (min-width: 540px) and (max-width: 780px) {
+@media screen and (min-width: 540px) and (max-width: 810px) {
   header img {
-      padding: 15px;
-      width: 30%;
+      padding: 0px;
+      width: 35%;
       position: relative;
   }
+
+  ul {
+    padding: 8px;
+  }
+
 }
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1440px) {
   header img {
-      padding: 15px;
-      width: 30%;
+      padding: 0px;
+      width: 20%;
       position: relative;
   }
+
+  ul {
+    padding: 23px;
+  }
+
 }
 
 
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
   overflow: hidden;
-  background-color: #35332c;
+  float:right;
+  /* background-color: #35332c; */
 }
 
 li {
@@ -108,7 +128,7 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;
+  /* background-color: #111; */
 }
 
 .center {
