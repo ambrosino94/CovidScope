@@ -1,0 +1,11 @@
+<ul class="NavBar">
+        <div class="NavBar_Plots">
+        {{ range .Site.pages }}
+          <li class="NavBar_Plots_Item">
+            <a href="{{ .RelPermalink }}" title="{{ .RelPermalink }}">{{ .Title }}</a>
+          </li>
+        {{ end }}
+        </div>
+      <span id="nav_divider"> | </span>
+      <a id="Country" href="">Panamá</a>
+      </ul>
