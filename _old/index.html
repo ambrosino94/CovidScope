@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CovidScope - El virus en la mira</title>
+  <link rel="icon" href="Assets/Images/CovidFavicon.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="hcStyle.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <!-- <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet"> -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script> -->
+
+  <script src="https://kit.fontawesome.com/ed2ee1aa4d.js" crossorigin="anonymous"></script>
+
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/series-label.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+  <script language="javascript" type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body bgcolor="#404040"> <!-- Assigning grey background color to the whole html>-->
+
+
+
+  <div class="container">
+
+  <header>
+  <img src="Assets/Images/COVIDtitle.png" alt="logo" />
+  <ul>
+  <li><a href="#defaultPty"><img id="ptyBtn" src="Assets/Images/Panamá.png"></a></li>
+  <!-- <li><a href="#colombia"><img id="coloBtn" src="Assets/Images/Colombia.png"></a></li>
+  <li><a href="#italia"><img id="italyBtn" src="Assets/Images/Italia.png"></a></li>
+  <li><a href="#usa"><img id="usaBtn" src="Assets/Images/USA.png"></a></li> -->
+  </ul>
+   <!-- <h1>El virus en la mira...</h1> -->
+  </header>
+  </div>
+  <br>
+
+  <!-- <canvas id="Plot1" width="1600" height="900"></canvas>
+  <script>
+  var ctx = document.getElementById("Plot1");
+  DrawChart(ctx);
+  </script>
+  <!-- <img src="Assets/Images/rprt.png" class="center" /> --> -->
+
+  <figure class="highcharts-figure">
+      <div id="plot1"></div>
+      <script>
+        var ctx = document.getElementById("Plot1");
+        DrawChart(ctx);
+      </script>
+  </figure>
+
+  <br>
+
+  <div id="infogramShort">
+    <div class="infogram-embed" data-id="84082ca7-009d-4886-b855-399c7a69cee3" data-type="interactive" data-title="CovidScope"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a id="infogramShort" href="https://infogram.com/84082ca7-009d-4886-b855-399c7a69cee3" style="color:#989898!important;text-decoration:none!important;" target="_blank">CovidScope</a><br><a id="infogramShort" href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
+  </div>
+
+ <div id="infogramLarge">
+   <div class="infogram-embed" data-id="b2f82703-e906-4e13-844b-228c267edb61" data-type="interactive" data-title="CovidScope"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/b2f82703-e906-4e13-844b-228c267edb61" style="color:#989898!important;text-decoration:none!important;" target="_blank">CovidScope</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
+ </div>
+
+
+  <script>
+
+
+  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    // true for mobile device
+    document.getElementById("infogramLarge").style.display = 'none';
+    document.getElementById("infogramShort").style.display = 'block';
+  }else{
+    // false for not mobile device
+    document.getElementById("infogramLarge").style.display = 'block';
+    document.getElementById("infogramShort").style.display = 'none';
+  }
+
+
+
+  // if (window.devicePixelRatio*window.screen.width < 990){
+  //   document.getElementById("infogramLarge").style.display = 'none';
+  //   document.getElementById("infogramShort").style.display = 'block';
+  // } else {
+  //   document.getElementById("infogramLarge").style.display = 'block';
+  //   document.getElementById("infogramShort").style.display = 'none';
+  // }
+
+
+</script>
+
+<!-- <iframe id= "Iframe" height="1000" scrolling="no" frameborder="0" src="//plotly.com/~ambrosino94/0.embed"></iframe> -->
+  <!-- <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~ambrosino94/0.embed"></iframe>
+  <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+ <script>
+  document.getElementById('myIframe').src = "https://chart-studio.plotly.com/~ambrosino94/0.embed"; -->
+
+
+</body>
+
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+
+  <h3>ambrosino<span>Tech</span></h3>
+
+  <p class="footer-links">
+  <a href="#">Home</a>
+  <!-- ·
+  <a href="#">Blog</a>
+  ·
+  <a href="#">Pricing</a> -->
+  ·
+  <a href="#">About</a>
+  <!-- ·
+  <a href="#">Faq</a> -->
+  ·
+  <a href="#">Contact</a>
+  </p>
+
+  <p class="footer-company-name">ambrosinoTech &copy; 2020</p>
+  </div>
+
+  <div class="footer-center">
+
+  <!-- <div>
+  <i class="fa fa-map-marker"></i>
+  <p><span>21 Revolution Street</span> Delhi, India</p>
+  </div> -->
+
+  <!-- <div>
+  <i class="fa fa-phone"></i>
+  <p>+1 555 123456</p>
+  </div> -->
+  <p class="footer-company-about">
+    <span>Show your support</span>
+  </p>
+
+  <div id="wrapper">
+    <div id="div1"><i class="fas fa-donate"></i></div>
+    <!-- <div id="div2" class="coffee-btn"><script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="ambrosino" data-color="#b17635" data-emoji=""  data-font="Bree" data-text="Invítame al cafesito  🎩" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script></div> -->
+    <div id="div2" class="coffee-btn"><script type="text/javascript" src="coffeeBtnSRC.js" data-name="bmc-button" data-slug="ambrosino" data-color="#b17635" data-emoji=""  data-font="Bree" data-text="Invítame el cafecito  🎩" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script></div>
+  </div>
+
+
+
+  <div>
+  <i class="fa fa-envelope"></i>
+  <p><a href="mailto:support@company.com">ambrosinotech@gmail.com</a></p>
+  </div>
+
+  </div>
+
+  <div class="footer-right">
+
+  <p class="footer-company-about">
+  <span>About the company</span>
+  Building...
+  </p>
+
+  <div class="footer-icons">
+
+  <a href="https://www.instagram.com/ambrosino94/"><i class="fa fa-instagram"></i></a>
+  <a href="https://www.linkedin.com/in/giacomoeambrosino/"><i class="fa fa-linkedin"></i></a>
+  <a href="https://github.com/ambrosino94/CovidScope"><i class="fa fa-github"></i></a>
+
+  </div>
+
+  </div>
+
+</footer>
+
+</html>
