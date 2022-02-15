@@ -209,7 +209,7 @@ nav ul {
   display: inline-flex;
   flex-wrap: nowrap;
   list-style: none;
-  margin: 0.1rem 0;
+  margin: 0.1rem 10;
 }
 
 
