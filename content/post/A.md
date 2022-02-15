@@ -6,4 +6,4 @@ draft: false
 type: plot
 weight: 1
 ---
-Forecast
+Forecasts
