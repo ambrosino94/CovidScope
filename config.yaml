@@ -1,6 +1,6 @@
 baseURL: https://example.com
 languageCode: en-us
-title: Your site title
+title: CovidScope
 theme: freshStart
 
 params:
