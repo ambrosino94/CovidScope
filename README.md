@@ -38,6 +38,7 @@ The project is currently stopped and outdated, with February 2022 being the last
 Future objectives for the forecasting showcase website included:
 
 - Adding capabilities to analyze and forecast information for other countries, expanding beyond Panama.
+- Migrate Chart.js to Highcharts.
 - Updating the website with the latest data and improving the automation process for seamless updates.
 
 Although the project is currently inactive, it has made significant contributions to the academic community and demonstrated the potential for data-driven forecasting and analysis in managing the Covid19 pandemic.
