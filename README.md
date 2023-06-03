@@ -43,6 +43,6 @@ Future objectives for the forecasting showcase website included:
 
 Although the project is currently inactive, it has made significant contributions to the academic community and demonstrated the potential for data-driven forecasting and analysis in managing the Covid19 pandemic.
 
-Thank you for visiting the CovidScope Showcase website!
+Thank you for visiting the [CovidScope Showcase website](https://covidscope.netlify.app/)!
 
 ###### A94
